@@ -1,0 +1,11 @@
+C:\Users\92701\source\repos\小算盤\小算盤\bin\Debug\小算盤.exe.config
+C:\Users\92701\source\repos\小算盤\小算盤\bin\Debug\小算盤.exe
+C:\Users\92701\source\repos\小算盤\小算盤\bin\Debug\小算盤.pdb
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.csproj.AssemblyReference.cache
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.csproj.SuggestedBindingRedirects.cache
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.Form1.resources
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.Properties.Resources.resources
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.csproj.GenerateResource.cache
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.csproj.CoreCompileInputs.cache
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.exe
+C:\Users\92701\source\repos\小算盤\小算盤\obj\Debug\小算盤.pdb
