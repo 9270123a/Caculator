@@ -32,6 +32,8 @@ namespace 小算盤
             {
                 display.StoreNumber(display.CurrentDisplay);
             }
+            ///如果計算完再按下數字 要清空
+       
 
             display.AppendDigit(button.Text);
 
@@ -43,21 +45,17 @@ namespace 小算盤
 
             Button button = (Button)sender;
 
-            
+
             ///要兩個參數1.確定前面有operation2.不是連續按operation
             if (!string.IsNullOrEmpty(display.CurrentOperation) && display.SecondOperator)
             {
-                if(display.CurrentNumber != "0" && display.CurrentOperation != "/")
+                if (display.StoredNumber == "")
                 {
-                    if (checkedZero()==true)
-                    {
-                        PerformCaculate(display.CurrentNumber);
-                        ///確保我按完2次operator計算，我再次按下operator計算
-                    }
-
+                    display.StoreNumber(ResultTxt.Text);
                 }
-                
-                
+                    PerformCaculate(display.CurrentNumber);
+                    ///確保我按完2次operator計算，我再次按下operator計算
+                    display.StoreNumber("");
             }
             display.SetOperation(button.Text);
             UpdateDisplay();
@@ -68,8 +66,15 @@ namespace 小算盤
         {
             if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleCalculate)
             {
-   
-                PerformCaculate(display.CurrentNumber);
+                if (display.StoredNumber != "")
+                {
+                    PerformCaculate(display.CurrentNumber);
+                    display.StoreNumber("");
+                    display.currentNumberClear();
+                }
+                
+                
+              
             }
 
             UpdateDisplay();
@@ -81,11 +86,17 @@ namespace 小算盤
         private void PerformCaculate(string currentnumber)
         {
 
+
             var result = calculator.Calculate(
             double.Parse(display.StoredNumber),
-            double.Parse(currentnumber), 
+            double.Parse(currentnumber),
             display.CurrentOperation);
             display.SetResult(result);
+
+
+
+
+
         }
         private void UpdateDisplay()
         {
@@ -94,20 +105,9 @@ namespace 小算盤
 
         private void DELETE_Click(object sender, EventArgs e)
         {
-
+            display.Reset();
         }
 
-        private bool checkedZero()
-        {
-            if (display.CurrentNumber != "0" && display.CurrentOperation != "/")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
 
-        }
     }
 }

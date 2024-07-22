@@ -14,7 +14,7 @@ namespace 小算盤
         private StringBuilder currentInput = new StringBuilder();
 
         private string storedNumber = "";
-        private bool doublecalculate = false;
+        private bool doublecalculate = true;
         public string currentOperation = "";
         private bool isNewInput = false;
         private bool secondOperator = false;
@@ -22,6 +22,7 @@ namespace 小算盤
 
         public bool DoubleCalculate => doublecalculate;
         public bool SecondOperator => secondOperator;
+        
         public string CurrentOperation => currentOperation;
         public string CurrentDisplay => currentInput.ToString();
         public string CurrentNumber => currentnumber;
@@ -72,18 +73,38 @@ namespace 小算盤
         {
             currentInput.Clear();
             currentInput.Append(result);
-            doublecalculate = false;
+            
 
         }
         public void StoreNumber(string number)
         {
             storedNumber = number;
-            doublecalculate = true;
+            
         }
         public void displayresult()
         {
 
             currentInput.Append(storedNumber);
+        }
+
+
+        public void Reset()
+        {
+
+
+            storedNumber = "";
+            doublecalculate = false;
+            currentOperation = "";
+            isNewInput = false;
+            secondOperator = false;
+            currentnumber = "";
+            currentInput.Clear();
+           
+
+        }
+        public void currentNumberClear()
+        {
+            currentnumber = "0";
         }
 
     }

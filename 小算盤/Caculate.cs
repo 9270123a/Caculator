@@ -47,8 +47,14 @@ namespace 小算盤
             if (y == 0)
             {
                 throw new DivideByZeroException("Cannot divide by zero");
+                
+
             }
-            return x / y;
+            else
+            {
+                return x / y;
+            }
+            
         }
 
 

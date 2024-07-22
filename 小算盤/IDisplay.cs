@@ -24,5 +24,7 @@ namespace 小算盤
 
         void displayresult();
 
+        void Reset();
+        void currentNumberClear();
     }
 }
