@@ -22,7 +22,7 @@ namespace 小算盤
         }
 
 
-        ///按下第二個數字，要存起畫面上的數字
+        ///這邊輸入第二個數字要消除畫面的數字 並將它存起
         private void NumberClick(object sender, EventArgs e)
         {
 
@@ -31,66 +31,61 @@ namespace 小算盤
             if (display.Newinput)
             {
                 display.StoreNumber(display.CurrentDisplay);
-
             }
-            display.Clear();
 
-
-            
             display.AppendDigit(button.Text);
 
-            if (!string.IsNullOrEmpty(display.CurrentOperation))
-            {
-                PerformCaculate(button.Text);
-            }
-            
             UpdateDisplay();
-
-
-
         }
-        ///當畫面上有數字 存起來
+        ///這邊則是要在第二個operator時候啟動計算，並將(在number那邊會存好畫面上的數字CurrentOperation)
         private void OperClick(object sender, EventArgs e)
         {
 
             Button button = (Button)sender;
 
+            
+            ///要兩個參數1.確定前面有operation2.不是連續按operation
+            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.SecondOperator)
+            {
+                if(display.CurrentNumber != "0" && display.CurrentOperation != "/")
+                {
+                    if (checkedZero()==true)
+                    {
+                        PerformCaculate(display.CurrentNumber);
+                        ///確保我按完2次operator計算，我再次按下operator計算
+                    }
 
-
-     
-
+                }
+                
+                
+            }
             display.SetOperation(button.Text);
             UpdateDisplay();
+
         }
 
         private void EqualsClick(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(display.CurrentOperation))
+            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleCalculate)
             {
-                PerformCaculate(display.CurrentDisplay);
+   
+                PerformCaculate(display.CurrentNumber);
             }
-            
+
             UpdateDisplay();
-         
         }
         ///按下= 我要顯示結果，我的結果在
-
         ///我有兩個情況要計算
         ///1.按下equal
         ///2.按下第二個operator，我set時候就將變數改為true，每次算答案又改成false
-        private void PerformCaculate(string inputNumber)
+        private void PerformCaculate(string currentnumber)
         {
 
             var result = calculator.Calculate(
-                
-            display.StoredNumber,
-            double.Parse(inputNumber), 
+            double.Parse(display.StoredNumber),
+            double.Parse(currentnumber), 
             display.CurrentOperation);
-
             display.SetResult(result);
-
-
-
         }
         private void UpdateDisplay()
         {
@@ -99,6 +94,19 @@ namespace 小算盤
 
         private void DELETE_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private bool checkedZero()
+        {
+            if (display.CurrentNumber != "0" && display.CurrentOperation != "/")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
     }

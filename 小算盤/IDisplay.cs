@@ -11,15 +11,18 @@ namespace 小算盤
         string CurrentDisplay { get; }
         
         bool Newinput { get; }
-
-        double StoredNumber { get;}
+        bool DoubleCalculate { get; }
+        string StoredNumber { get;}
         string CurrentOperation { get; }
+        bool SecondOperator { get; }
+        string CurrentNumber { get; }
         void AppendDigit(string digit);
         void SetOperation(string operation);
         void Clear();
         void SetResult(double result);
         void StoreNumber(string number);
 
+        void displayresult();
 
     }
 }
