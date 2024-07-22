@@ -13,20 +13,19 @@ namespace 小算盤
 
         private StringBuilder currentInput = new StringBuilder();
 
-        private string storedNumber = "";
-        private bool doublecalculate = true;
+        private string preNumber = "";
         public string currentOperation = "";
-        private bool isNewInput = false;
-        private bool secondOperator = false;
+        private bool isNewInput = true;
+        private bool doubleClickoper = true;
+        private bool doubleClickequal = true;
         private string currentnumber = "";
 
-        public bool DoubleCalculate => doublecalculate;
-        public bool SecondOperator => secondOperator;
-        
+        public bool DoubleclickOper => doubleClickoper;
+        public bool DoubleclickEqual => doubleClickequal;
         public string CurrentOperation => currentOperation;
         public string CurrentDisplay => currentInput.ToString();
         public string CurrentNumber => currentnumber;
-        public string StoredNumber => storedNumber;
+        public string PreNumber => preNumber;
         public bool Newinput => isNewInput;
 
         public void AppendDigit(string digit)
@@ -34,21 +33,35 @@ namespace 小算盤
 
             ///判斷是否前面已經有數字，用是否有存operator但如果按下多次則會出錯，
             ///所以要多一個連續按數字也可以判定
-            if (!string.IsNullOrEmpty(CurrentOperation) && isNewInput)
+
+
+
+            if (!isNewInput)//用來判斷是不是新輸入
             {
-                currentInput.Clear();
+                Clear();
+                isNewInput = true;
+                doubleClickoper = true;//案新數字才能計算
+                doubleClickequal = true;
+
             }
+            
+
             currentInput.Append(digit);
+            //if (!string.IsNullOrEmpty(CurrentOperation) && isNewInput)
+            //{
+            //    currentInput.Clear();
+            //}
+            //currentInput.Append(digit);
 
-            ///這是為了將現在畫面上的數字存進去，可以進行算法
-            ///因為必須在外面進行計算，所以要公開
-            if(!string.IsNullOrEmpty(CurrentOperation))
-            {
-                currentnumber = currentInput.ToString();
-                secondOperator = true;
-            }
+            /////這是為了將現在畫面上的數字存進去，可以進行算法
+            /////因為必須在外面進行計算，所以要公開
+            //if(!string.IsNullOrEmpty(CurrentOperation))
+            //{
+            //    currentnumber = currentInput.ToString();
+            //    secondOperator = true;
+            //}
 
-            isNewInput = false;
+            //isNewInput = false;
 
 
 
@@ -59,8 +72,8 @@ namespace 小算盤
             ///secondOperator用來判定說是否有連續點擊operator的行為，
             ///因為我是利用operator觸發計算的但有可能連續點+++或要換符號+-
             currentOperation = operation;
-            isNewInput = true;
-            secondOperator = false;
+            isNewInput = false;
+            //secondOperator = false;
         }
 
         public void Clear()
@@ -73,18 +86,21 @@ namespace 小算盤
         {
             currentInput.Clear();
             currentInput.Append(result);
-            
+            doubleClickoper = false;
+            doubleClickequal = false;
+            currentOperation = "";
+
 
         }
-        public void StoreNumber(string number)
+        public void SetPrenumber(string number)
         {
-            storedNumber = number;
+            preNumber = number;
             
         }
         public void displayresult()
         {
 
-            currentInput.Append(storedNumber);
+            currentInput.Append(preNumber);
         }
 
 
@@ -92,14 +108,13 @@ namespace 小算盤
         {
 
 
-            storedNumber = "";
-            doublecalculate = false;
-            currentOperation = "";
-            isNewInput = false;
-            secondOperator = false;
-            currentnumber = "";
-            currentInput.Clear();
-           
+        preNumber = "";
+        currentOperation = "";
+        isNewInput = true;
+        doubleClickoper = true;
+        doubleClickequal = true;
+        currentnumber = "";
+        Clear();
 
         }
         public void currentNumberClear()

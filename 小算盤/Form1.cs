@@ -26,76 +26,60 @@ namespace 小算盤
         private void NumberClick(object sender, EventArgs e)
         {
 
-
             Button button = (Button)sender;
-            if (display.Newinput)
+            ///如果他按下equal，但她再次按下數字他會清空重算(apple計算機邏輯)
+            if (!display.DoubleclickEqual && display.CurrentOperation=="")
             {
-                display.StoreNumber(display.CurrentDisplay);
+                display.Reset();
             }
-            ///如果計算完再按下數字 要清空
-       
-
             display.AppendDigit(button.Text);
-
             UpdateDisplay();
+
         }
-        ///這邊則是要在第二個operator時候啟動計算，並將(在number那邊會存好畫面上的數字CurrentOperation)
+    
         private void OperClick(object sender, EventArgs e)
         {
 
             Button button = (Button)sender;
 
-
-            ///要兩個參數1.確定前面有operation2.不是連續按operation
-            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.SecondOperator)
+            //要兩個參數1.確定前面有operation2.不是連續按operation
+            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleclickOper)
             {
-                if (display.StoredNumber == "")
-                {
-                    display.StoreNumber(ResultTxt.Text);
-                }
-                    PerformCaculate(display.CurrentNumber);
-                    ///確保我按完2次operator計算，我再次按下operator計算
-                    display.StoreNumber("");
+
+                PerformCaculate(display.CurrentDisplay);
+                UpdateDisplay();
             }
+
             display.SetOperation(button.Text);
-            UpdateDisplay();
+            display.SetPrenumber(display.CurrentDisplay);
+
+
+
 
         }
 
         private void EqualsClick(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleCalculate)
-            {
-                if (display.StoredNumber != "")
-                {
-                    PerformCaculate(display.CurrentNumber);
-                    display.StoreNumber("");
-                    display.currentNumberClear();
-                }
-                
-                
-              
-            }
 
-            UpdateDisplay();
+            ///跟oper一樣要有第二個數字再算，不能連續點擊觸發計算
+            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleclickEqual)
+            {
+                PerformCaculate(display.CurrentDisplay);
+                UpdateDisplay();
+
+            }
+                
+
         }
-        ///按下= 我要顯示結果，我的結果在
-        ///我有兩個情況要計算
-        ///1.按下equal
-        ///2.按下第二個operator，我set時候就將變數改為true，每次算答案又改成false
+
         private void PerformCaculate(string currentnumber)
         {
 
-
             var result = calculator.Calculate(
-            double.Parse(display.StoredNumber),
+            double.Parse(display.PreNumber),
             double.Parse(currentnumber),
             display.CurrentOperation);
             display.SetResult(result);
-
-
-
-
 
         }
         private void UpdateDisplay()
@@ -106,6 +90,7 @@ namespace 小算盤
         private void DELETE_Click(object sender, EventArgs e)
         {
             display.Reset();
+            UpdateDisplay();
         }
 
 
