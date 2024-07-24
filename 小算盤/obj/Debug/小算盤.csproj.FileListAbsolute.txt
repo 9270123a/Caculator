@@ -20,3 +20,13 @@ C:\Users\92701\source\repos\Caculator\小算盤\obj\Debug\小算盤.csproj.Gener
 C:\Users\92701\source\repos\Caculator\小算盤\obj\Debug\小算盤.csproj.CoreCompileInputs.cache
 C:\Users\92701\source\repos\Caculator\小算盤\obj\Debug\小算盤.exe
 C:\Users\92701\source\repos\Caculator\小算盤\obj\Debug\小算盤.pdb
+C:\Caculator\小算盤\bin\Debug\小算盤.exe.config
+C:\Caculator\小算盤\bin\Debug\小算盤.exe
+C:\Caculator\小算盤\bin\Debug\小算盤.pdb
+C:\Caculator\小算盤\obj\Debug\小算盤.csproj.AssemblyReference.cache
+C:\Caculator\小算盤\obj\Debug\小算盤.Form1.resources
+C:\Caculator\小算盤\obj\Debug\小算盤.Properties.Resources.resources
+C:\Caculator\小算盤\obj\Debug\小算盤.csproj.GenerateResource.cache
+C:\Caculator\小算盤\obj\Debug\小算盤.csproj.CoreCompileInputs.cache
+C:\Caculator\小算盤\obj\Debug\小算盤.exe
+C:\Caculator\小算盤\obj\Debug\小算盤.pdb
