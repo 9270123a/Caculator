@@ -14,24 +14,26 @@ namespace 小算盤
     {
         private ICaculate calculator;
         private IDisplay display;
-        public Form1()
+        private ICalculatorFactory factory;
+        public Form1(ICalculatorFactory factory)
         {
             InitializeComponent();
-            calculator = new Caculate();
-            display = new Display();
+            this.factory = factory;
+            InitializationClass();
+
         }
 
+        private void InitializationClass()
+        {
+            calculator = factory.CreateCalculator();
+            display = factory.CreateDisplay();
+        }
 
         ///這邊輸入第二個數字要消除畫面的數字 並將它存起
         private void NumberClick(object sender, EventArgs e)
         {
 
             Button button = (Button)sender;
-            ///如果他按下equal，但她再次按下數字他會清空重算(apple計算機邏輯)
-            if (!display.DoubleclickEqual && display.CurrentOperation=="")
-            {
-                display.Reset();
-            }
             display.AppendDigit(button.Text);
             UpdateDisplay();
 
@@ -41,34 +43,28 @@ namespace 小算盤
         {
 
             Button button = (Button)sender;
-
-            //要兩個參數1.確定前面有operation2.不是連續按operation
-            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleclickOper)
-            {
-
-                PerformCaculate(display.CurrentDisplay);
-                UpdateDisplay();
-            }
-
             display.SetOperation(button.Text);
-            display.SetPrenumber(display.CurrentDisplay);
 
-
-
+            if (display.OperationSet)
+            {
+                PerformCaculate(display.CurrentDisplay);
+            }
+            UpdateDisplay();
 
         }
 
         private void EqualsClick(object sender, EventArgs e)
         {
 
-            ///跟oper一樣要有第二個數字再算，不能連續點擊觸發計算
-            if (!string.IsNullOrEmpty(display.CurrentOperation) && display.DoubleclickEqual)
+
+            if (display.EqualSet)
             {
                 PerformCaculate(display.CurrentDisplay);
-                UpdateDisplay();
-
             }
-                
+
+            UpdateDisplay();
+
+
 
         }
 
@@ -80,8 +76,12 @@ namespace 小算盤
             double.Parse(currentnumber),
             display.CurrentOperation);
             display.SetResult(result);
-
+   
         }
+
+
+
+
         private void UpdateDisplay()
         {
             ResultTxt.Text = display.CurrentDisplay.ToString();
@@ -89,7 +89,7 @@ namespace 小算盤
 
         private void DELETE_Click(object sender, EventArgs e)
         {
-            display.Reset();
+            display.Clear();
             UpdateDisplay();
         }
 

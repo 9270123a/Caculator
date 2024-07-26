@@ -16,7 +16,8 @@ namespace 小算盤
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            ICalculatorFactory factory = new CalculatorFactory();
+            Application.Run(new Form1(factory));
         }
     }
 }

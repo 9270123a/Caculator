@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}</ProjectGuid>
+    <ProjectGuid>{63EF0AA0-605B-4062-9B58-076B5BB27761}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>小算盤</RootNamespace>
     <AssemblyName>小算盤</AssemblyName>
@@ -46,18 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caculate.cs" />
-    <Compile Include="Display.cs" />
+    <Compile Include="class\Caculate.cs" />
+    <Compile Include="class\CalculatorFactory.cs" />
+    <Compile Include="class\Display.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ICaculate.cs" />
-    <Compile Include="IDisplay.cs" />
+    <Compile Include="Interface\ICaculate.cs" />
+    <Compile Include="Interface\ICalculatorFactory.cs" />
+    <Compile Include="Interface\IDisplay.cs" />
+    <Compile Include="Interface\IDisplayState.cs" />
+    <Compile Include="State\InitialState.cs" />
+    <Compile Include="State\InputState.cs" />
+    <Compile Include="State\OperationState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\ResultState.cs" />
     <Compile Include="Test.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
