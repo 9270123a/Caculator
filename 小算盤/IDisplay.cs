@@ -23,10 +23,7 @@ namespace 小算盤
         void Clear();
         void SetResult(double result);
         void SetPrenumber(string number);
-
-        void displayresult();
-
         void Reset();
-        void currentNumberClear();
+
     }
 }
