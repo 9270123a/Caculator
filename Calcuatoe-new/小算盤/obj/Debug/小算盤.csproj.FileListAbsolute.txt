@@ -30,3 +30,13 @@ C:\Caculator\小算盤\obj\Debug\小算盤.csproj.GenerateResource.cache
 C:\Caculator\小算盤\obj\Debug\小算盤.csproj.CoreCompileInputs.cache
 C:\Caculator\小算盤\obj\Debug\小算盤.exe
 C:\Caculator\小算盤\obj\Debug\小算盤.pdb
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.csproj.AssemblyReference.cache
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.Form1.resources
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.Properties.Resources.resources
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.csproj.GenerateResource.cache
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.csproj.CoreCompileInputs.cache
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.exe
+C:\Caculator\Calcuatoe-new\小算盤\obj\Debug\小算盤.pdb
+C:\Caculator\Calcuatoe-new\小算盤\bin\Debug\小算盤.exe.config
+C:\Caculator\Calcuatoe-new\小算盤\bin\Debug\小算盤.exe
+C:\Caculator\Calcuatoe-new\小算盤\bin\Debug\小算盤.pdb
