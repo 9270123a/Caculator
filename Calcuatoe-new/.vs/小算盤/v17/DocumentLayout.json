@@ -3,31 +3,31 @@
   "WorkspaceRootPath": "C:\\Caculator\\Calcuatoe-new\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\eventhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|c:\\caculator\\calcuatoe-new\\\u5C0F\u7B97\u76E4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A8F09FE9-93E4-4411-B36E-01B9F7F255C7}|\u5C0F\u7B97\u76E4\\\u5C0F\u7B97\u76E4.csproj|solutionrelative:\u5C0F\u7B97\u76E4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Form1.cs",
               "RelativeDocumentMoniker": "\u5C0F\u7B97\u76E4\\Form1.cs",
               "ToolTip": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Form1.cs",
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Form1.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAmwEcAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T03:59:41.722Z",
               "IsPinned": true,
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "\u5C0F\u7B97\u76E4\\Controller.cs",
               "ToolTip": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Controller.cs",
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Controller.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAwwC8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T04:10:48.072Z",
               "IsPinned": true,
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EventHandlers.cs",
               "DocumentMoniker": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\EventHandlers.cs",
               "RelativeDocumentMoniker": "\u5C0F\u7B97\u76E4\\EventHandlers.cs",
@@ -79,12 +79,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T04:02:07.279Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Program.cs",
               "RelativeDocumentMoniker": "\u5C0F\u7B97\u76E4\\Program.cs",
@@ -92,18 +91,17 @@
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:08:15.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T04:08:15.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Calculator.cs",
               "DocumentMoniker": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Calculator.cs",
               "RelativeDocumentMoniker": "\u5C0F\u7B97\u76E4\\Calculator.cs",
               "ToolTip": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Calculator.cs",
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Calculator.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAIAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T04:02:39.61Z",
               "EditorCaption": ""
@@ -118,8 +116,7 @@
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Display.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T04:01:52.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T04:01:52.205Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "ToolTip": "C:\\Caculator\\Calcuatoe-new\\\u5C0F\u7B97\u76E4\\Form1.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "\u5C0F\u7B97\u76E4\\Form1.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T03:59:39.809Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
+              "WhenOpened": "2024-07-26T03:59:39.809Z"
             }
           ]
         }

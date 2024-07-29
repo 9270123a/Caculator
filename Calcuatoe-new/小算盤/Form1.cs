@@ -13,10 +13,11 @@ namespace 小算盤
     public partial class Form1 : Form
     {
 
-        string CurrentOperation;
-        string number1;
-        string number2;
+        public string CurrentOperation;
+        public string number1;
+        public string number2;
         bool newinput = true;
+        Controller controller = new Controller();
         public Form1()
         {
             InitializeComponent();
@@ -85,6 +86,11 @@ namespace 小算盤
         private void DELETE_Click(object sender, EventArgs e)
         {
             
+        }
+        
+        private void ClearDisplay()
+        {
+            ResultTxt.Text = "";
         }
 
 
