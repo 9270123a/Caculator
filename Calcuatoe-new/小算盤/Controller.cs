@@ -14,12 +14,7 @@ namespace 小算盤
 
         Calculator calculator = new Calculator();
         public double result {  get; set; }
-        public Controller()
-        {
-            CurrentInput = "";
 
-
-        }
 
         public void AddDigit(string number)
         {
@@ -29,19 +24,14 @@ namespace 小算盤
         {
 
         }
-        public void SetPrenumber(string number)
-        {
 
-        }
-        public void Clear()
-        {
-            CurrentInput="";
-        }
+  
 
         public void Calculator(string number1, string number2, string operation)
         {
             result =  calculator.calculater(double.Parse(number1), double.Parse(number2), operation);
             EventHandlers.NotifyEvent(result);
+          
         }
     }
 }
